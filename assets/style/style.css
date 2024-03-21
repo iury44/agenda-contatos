@@ -34,7 +34,10 @@ body{
   border-radius: 1rem;
   box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.7);
 }
-
+header{
+  display: flex;
+  gap: 4rem;
+}
 form{
   display: flex;
   flex-direction: column;
