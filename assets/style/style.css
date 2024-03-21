@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color--body:#451F68;
+  --bg-color-container-form:#FFF;
+  --bg-color-button: #FF7900;
+  --ff-title:"Roboto Condensed", sans-serif;
+  --ff-padrao:"Poppins",sans-serif;
+  --ff-color-destaque:#7B2CBf;
+  font-size: 62.5%;
+
+  
+}
+
+body{
+  font-size: 1.6rem;
+  background: var(--bg-color--body);
+}
+
+.container{
+  background: var(--bg-color-container-form);
+  max-width: 90.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: -30px 20px 30px rgba(0, 0, 0, 0.7);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--ff-padrao);
+  font-size: 1.4rem;
+  font-weight: bold;
+ 
+
+
+}
+#nameComplet{
+  width: 40rem;
+  height: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
+ border: 2px solid #000;
+
+ 
+}
+#tel,#email{
+  width: 22rem;
+  height: 3.5rem;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 3rem;
+  
+}
+#nameComplet:focus,
+#tel:focus,
+#email:focus{
+  
+  overflow: hidden;
+  border: none;
+  outline: var(--ff-color-destaque) solid 2px;
+ 
+  
+}
+#nameComplet:focus::placeholder,
+#tel:focus::placeholder,
+#email:focus::placeholder{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100);
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  font-family: var(--ff-padrao);
+  color: #F00;
+  font-weight: 600;
+  transition: 0.9s;
+
+}
+#btn-submit{
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem auto ;
+  background: var(--bg-color-button);
+  border: 3px solid #000 ;
+  cursor: pointer;
+ 
+}
+
+#btn-submit:hover{
+  
+  border: #7c2fc5 solid 3px;
+  transition: 0.9s;
+}
+.content-table{
+   border-bottom: 2px solid var(--ff-color-destaque); 
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+table{
+text-align: center;
+width: 82rem;
+
+
+border-radius: 1rem;
+border-collapse: collapse;
+font-family: var(--ff-padrao);
+font-weight: 400;
+}
+thead{
+  background: var(--bg-color-button);
+  border-radius: 1rem;
+}
+table th{
+  padding: 1rem;
+ 
+}
+table th:first-child{
+  border-radius: 1rem 0 0 1rem;
+ 
+}
+table th:last-child{
+  border-radius: 0 1rem 1rem 0;
+}
+table td{
+ 
+  padding: 0.5rem;
+  
+}
+
+table th:last-child{
+  width: 10rem;
+  color: #FFF;
+  background-color: #F00;
+}
+
+#btn-remove{
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #F00;
+  cursor: pointer;
+
+}
